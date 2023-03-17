@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
-#include <stdio.h>
+#include<stdio.h>
 /* betty style doc for function main goes there */
 /**
  * main - main function
@@ -18,7 +18,7 @@ int main(void)
 	/* your code goes there */
 	m = n % 10;
 	if (m > 5)
-		printf("Last digitnof %d is %d and is greater than 5", n, m);
+		printf("Last digit of %d is %d and is greater than 5", n, m);
 	else if (m == 0)
 		printf("Last digit of %d is %d and is 0", n, m);
 	else if (m < 6 && m != 0)
