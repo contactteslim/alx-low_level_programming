@@ -6,8 +6,8 @@ int count_words(char *str);
 char **strtow(char *str);
 
 /**
- * word_len - Locates the index marking the end of the 
- * 		first word contained within a string.
+ * word_len - Locates the index marking the end of the
+ *		first word contained within a string.
  * @str: The string to be searched.
  *
  * Return: The index marking the end of the initial word pointed to by str.
@@ -46,7 +46,7 @@ int count_words(char *str)
 			index += word_len(str + index);
 		}
 	}
-	return(words);
+	return (words);
 }
 
 /**
@@ -54,7 +54,7 @@ int count_words(char *str)
  * @str: The spring to be splitted.
  *
  * Return: If str = NULL, str = "", or the function fails - NULL.
- * 	Otherwise - a pointer to an array of strings (words).
+ *	Otherwise - a pointer to an array of strings (words).
  */
 char **strtow(char *str)
 {
@@ -96,6 +96,6 @@ char **strtow(char *str)
 		strings[w][l] = '\0';
 	}
 	strings[w] = NULL;
-	
+
 	return (strings);
 }
